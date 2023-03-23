@@ -3,8 +3,8 @@
 self.__uv$config = {
   prefix: "/application/v2/",
   bare: "/api/",
-  encodeUrl: Ultraviolet.codec.base64.encode,
-  decodeUrl: Ultraviolet.codec.base64.decode,
+  encodeUrl: Ultraviolet.codec.xor.encode,
+  decodeUrl: Ultraviolet.codec.xor.decode,
   handler: "/application/uv.handler.js",
   client: "/application/uv.client.js",
   bundle: "/application/uv.bundle.js",
